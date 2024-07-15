@@ -180,7 +180,7 @@ namespace RE
 	Actor* CombatGroup::FindClosestMemberToLocation(BGSWorldLocation& loc, Actor* toSkip, float maxRange) const
 	{
 		using func_t = decltype(&CombatGroup::FindClosestMemberToLocation);
-		REL::Relocation<func_t> func{ RELOCATION_ID(43521, 44323) };  // I do not know for AE
+		REL::Relocation<func_t> func{ RELOCATION_ID(43521, 44323) };  // 14076D000       14079AA20
 		return func(this, loc, toSkip, maxRange);
 	}
 
@@ -208,7 +208,7 @@ namespace RE
 	Actor* CombatGroup::FindRandomMember(Actor* toSkip) const
 	{
 		using func_t = decltype(&CombatGroup::FindRandomMember);
-		REL::Relocation<func_t> func{ RELOCATION_ID(43522, 44748) };  // I do not know for AE
+		REL::Relocation<func_t> func{ RELOCATION_ID(43522, 44748) };  // 14076D150       14079AB70
 		return func(this, toSkip);
 	}
 
@@ -222,7 +222,7 @@ namespace RE
 	CombatSearchLocation* CombatGroup::FindSearchLocation(Actor* member, int32_t min_score, float fromTimestamp)
 	{
 		using func_t = decltype(&CombatGroup::FindSearchLocation);
-		REL::Relocation<func_t> func{ RELOCATION_ID(43542, 44768) };  // I do not know for AE
+		REL::Relocation<func_t> func{ RELOCATION_ID(43542, 44768) };  // 14076FF00       14079D930
 		return func(this, member, min_score, fromTimestamp);
 	}
 
