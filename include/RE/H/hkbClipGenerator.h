@@ -69,9 +69,9 @@ namespace RE
 		void UpdateSync(const hkbContext& a_context) override;  // 19
 
 		// Add a trigger to the clip.
-		void addTrigger(float atLocalTime, const hkbEventBase& event, bool relativeToEndOfClip = false, bool acyclic = false, bool isAnnotation = false)
+		void AddTrigger(float atLocalTime, const hkbEventBase& event, bool relativeToEndOfClip = false, bool acyclic = false, bool isAnnotation = false)
 		{
-			REL::Relocation<decltype(&hkbClipGenerator::addTrigger)> func(RELOCATION_ID(58614, 0));  // I do not know for AE
+			REL::Relocation<decltype(&hkbClipGenerator::addTrigger)> func(RELOCATION_ID(58614, 59264));  // 140A0D7C0       140A31FD0
 			return func(this, atLocalTime, event, relativeToEndOfClip, acyclic, isAnnotation);
 		}
 
